@@ -11,26 +11,29 @@
 <body>
     <header>
         <h1>🌍 Country Information App</h1>
+
+        <button id="themeToggle">Dark Mode</button>
     </header>
 
     <main class="container">
 
         <!-- Search Section -->
         <section class="search-section">
-            <input type="text" id="countryInput" placeholder="Enter a country name..." />
+        
+            <div class="search-wrapper">
+                <input type="text" id="countryInput" placeholder="Enter a country name..." />
+        
+                <div id="suggestions" class="suggestions-box"></div>
+                <div id="historyDropdown" class="history-dropdown"></div>
+            </div>
+        
             <button id="searchBtn">Search</button>
+            <button id="clearHistoryBtn">Clear</button>
+        
         </section>
-
+        
         <!-- Result Section -->
-        <section id="result" class="result-card">
-            <img id="flag" src="" alt="Country flag" />
-
-            <h2 id="countryName">Country Name</h2>
-
-            <p><strong>Capital:</strong> <span id="capital">-</span></p>
-            <p><strong>Population:</strong> <span id="population">-</span></p>
-            <p><strong>Currency:</strong> <span id="currency">-</span></p>
-        </section>
+        <section id="result" class="result-card"></section>
 
     </main>
 
